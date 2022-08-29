@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/blogEntry.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>La ácidez en el café</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="./assets/coffee.png" alt="" id="navLogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactUs.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutUs.html">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#">Suscribirme</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- modal  -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container d-flex align-items-center justify-content-center loginBox">
+                    <div class="cafe">
+                        <form class="p-5">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-white">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese su correo">
+                                <div id="emailHelp" class="form-text text-white">Nunca compartiremos su correo
+                                    electrónico con nadie
+                                    más. </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Ingrese su contraseña">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <a href="#" class="text-white">Olvide mi contraseña</a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                            </div>
+                            <div class="iconos mt-3">
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <button class="btn btn-primary d-flex justify-content-between"><span>Ingrese con
+                                                Facebook</span><img src="../assets/loginfacebook.png" class="loginIcon"
+                                                alt="facebook"></button>
+
+                                    </div>
+
+                                    <div class="col-6">
+                                        <button class="btn btn-light d-flex justify-content-between"><span>Ingrese con
+                                                Google</span> <img src="../assets/logingoogle.png" alt="google"
+                                                class="loginIcon"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container align-items-center justify-content-center loginBox">
+                    <div class="cafe">
+                        <form class="p-5">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-white">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ingrese su correo">
+                                <div id="emailHelp" class="form-text text-white">Le enviaremos las ultimas noticias a su
+                                    correo </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label text-white">Contanos cual es tu
+                                    nombre</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /modal -->
+    <div class="container-fluid">
+        <div class="row py-5">
+            <!--ASIDE FLEFT-->
+            <div class="col-1 aside-left m-2 mt-5">
+
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12 center m-2 mt-5 container">
+                <div class="card p-4">
+                    <h1 class="fw-bold">La acidez en el café: ¿es algo bueno o malo?</h1>
+                    <p class="m-3">Para muchos consumidores escuchar a alguien diciendo que el café es ácido puede sonar
+                        algo extraño e incluso negativo. Esto puede deberse a ciertos malos entendidos y preconceptos
+                        que se
+                        tienen de la acidez y cómo ésta se presenta en bebidas y alimentos. La realidad es que la acidez
+                        es
+                        una cualidad que está presente en el café de forma natural. Entonces, ¿qué queremos decir cuando
+                        hablamos de acidez? Empecemos por definir este concepto.</p>
+
+                    <img class="imagen_central m-2"
+                        src="https://cafedelirante.com.ar/wp-content/uploads/2022/06/cafe-delirante-acidez-del-cafe-800x533.jpg.webp"
+                        alt="cafe">
+                    <h2 class="fw-bold">¿Que es la acidez?</h2>
+                    <p class="m-3">
+                        La acidez es uno de los cinco sabores básicos que percibimos mediante ciertos receptores
+                        específicos
+                        ubicados en nuestras papilas gustativas. Los otros cuatro son: amargo, dulce, salado y umami.
+                        Instintivamente la percepción de algo ácido provoca un estado de alerta (al igual que sucede con
+                        lo
+                        amargo).
+                    </p>
+                    <blockquote class="fst-italic"
+                        cite="https://cafedelirante.com.ar/blog/la-acidez-en-el-cafe-es-algo-bueno-o-malo/">
+                        <p>
+                            Dado que la acidez está presente en alimentos en mal estado y en algunos venenos, nuestro
+                            organismo activa un mecanismo de defensa heredado de una tradición de supervivencia.
+                        </p>
+                    </blockquote>
+                    <p class="m-3">
+                        Ahora bien, percibimos sabores ácidos en alimentos que consumimos diariamente (y por supuesto no
+                        significan ningún riesgo de toxicidad). Principalmente en frutas y en algunos alimentos lácteos
+                        y
+                        fermentados. Existen frutas ácidas por excelencia, como los cítricos, y en general suele haber
+                        mayor
+                        concentración de acidez en toda fruta inmadura.
+                    </p>
+                    <img class="imagen_central m-2"
+                        src="https://cafedelirante.com.ar/wp-content/uploads/2022/06/frutas-acidas-800x533.webp"
+                        alt="cafe">
+                    <h2 class="fw-bold">¿Cómo se produce la acidez en el café?</h2>
+                    <p class="m-3">
+                        En primer lugar, debemos tener presente que el café proviene de un fruto, por lo tanto, contiene
+                        una
+                        acidez natural. A su vez, los distintos procesos que necesita atravesar la cereza de café para
+                        llegar a la taza afectan y modifican su acidez.
+                    </p>
+
+                    <h4 class="fw-bold">#1. Varietal genético y terroir de café</h4>
+                    <p class="m-3">
+                        En términos botánicos, los niveles y tipos de acidez (entre otros factores) van a depender
+                        principalmente del varietal genético de la planta y del terroir. Este último comprende la
+                        ubicación
+                        geográfica y geológica donde es cultivada la planta. La composición de minerales del suelo, la
+                        altura y el clima son factores esenciales en el desarrollo de los frutos. El café de regiones de
+                        mayor altura (y, por ende, climas más fríos) suele presentar mayor acidez que el café que se
+                        encuentra a menor altitud. Por ejemplo, es esperable que percibamos más acidez en un café de
+                        Etiopía
+                        que en un café de Brasil.
+                    </p>
+                    <h4 class="fw-bold">#2 Proceso de fermentación del Café</h4>
+                    <p class="m-3">
+                        En segunda instancia otro elemento que va a modificar la acidez de nuestro café va a ser el
+                        proceso
+                        o beneficio. El nivel de fermentación va a jugar un rol importante. Va a ser muy distinta la
+                        acidez
+                        de un café de beneficio natural que la de un café de beneficio lavado.
+                    </p>
+                    <h4 class="fw-bold">#3 El tueste del Café</h4>
+                    <p class="m-3">
+                        Tercero, el proceso de tueste del café también puede alterar los niveles de acidez que vamos a
+                        percibir en taza. No es posible “crear” sabores nuevos en el grano, pero sí opacarlos o
+                        destacarlos
+                        con un fin específico. Los tuestes más claros resaltarán la acidez propia del café mientras que
+                        los
+                        tuestes con más desarrollo van a apagar un poco este atributo.
+                    </p>
+                    <h4 class="fw-bold">#4 La extracción y/o preparación del Café</h4>
+                    <p class="m-3">
+                        Por otra parte, es de destacar que el método de preparación de Café utilizado, también va a
+                        influir.
+                        Si bien, ya no somos capaces de modificar a nivel químico el café que estemos usando, sí jugando
+                        con
+                        la extracción y distintos métodos podremos variar el nivel de acidez. Por ejemplo, un café
+                        espresso
+                        o filtrado en v60 va a tener una concentración más alta de acidez que un cold brew (café
+                        infusionado
+                        en frío), ya que los compuestos ácidos se extraen por completo en caliente.
+
+                        Por otro lado, si la extracción es deficiente la bebida quedará desbalanceada. Los compuestos
+                        que
+                        percibimos como ácidos son los más solubles, por tanto, serán los primeros en extraerse. Si el
+                        café
+                        está subextraído percibiremos sabores agrios y salados que no serán agradables, a la bebida le
+                        faltará dulzor y cuerpo. Por el contrario, si obtenemos un café sobreextraído la acidez estará
+                        apagada y el resultado será plano y amargo.
+                    </p>
+                </div>
+                <div class="cotainer-fluid m-2 mt-5">
+                    <form action="" class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="img_perfil_ing rounded-circle"
+                                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                                    alt="perfil">
+                            </div>
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="Ingrese su nombre">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea class="text_area" maxlength="200" name="" id="" cols="30" rows="5"
+                                            placeholder=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col align-self-start">
+
+                        </div>
+                        <div class="col align-self-center">
+
+                        </div>
+                        <div class="col align-self-end">
+                            <button type="button" class="btn btn-dark">Comentar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="titleComentarios m-3 mt-5">
+                    <h3 class="fw-bold">Comentarios</h3>
+                </div>
+                <div class="container m-2 p-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <img class="img_perfil rounded-circle"
+                                src="https://st.depositphotos.com/1269204/1219/i/950/depositphotos_12196477-stock-photo-smiling-men-isolated-on-the.jpg"
+                                alt="perfil">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <h5>Fernando.cafetero</h5>
+                            <p>Gracias por enseñarnos, los correos son interesantes y educativos para lograr un cafe más
+                                rico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container m-2 p-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <img class="img_perfil rounded-circle"
+                                src="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2020/09/Madurez-emocional-7.jpg"
+                                alt="perfil">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <h5>Maria_colombiana</h5>
+                            <p>Muchas gracias por la información! Consumo su café mes a mes desde principio de este año
+                                (los conocí en Bariloche para la navidad pasada). Quiero saber qué tipos de cafés, que
+                                hacen ustedes, presentan esta acidez más marcada. Compro el blend de la casa y Etiopía.
+                                Gracias</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container m-2 p-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <img class="img_perfil rounded-circle"
+                                src="https://s03.s3c.es/imag/_v0/770x420/7/6/f/GettyImages-522796439.jpg" alt="perfil">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <h5>CafeDoBrasil</h5>
+                            <p>Hace poco estaba investigando sobre este tema. Bastante completo el articulo. Saludos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container m-2 p-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <img class="img_perfil rounded-circle"
+                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDxUPEBAQDxUVDw8PDxAPFg8PFg8PFRUWFhUVFRYYHSggGBolGxUVITEhJSsrLi4uFx8zODMsNyktLisBCgoKDg0OGBAQFy0mHyUrLS0tLSsrLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tK//AABEIAKABOwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAACAwQFAQYHAAj/xAA6EAACAQIEBAQCCAYCAwEAAAABAgADEQQSITEFBkFRImFxgRORBzJSYqGxwdEUI0Jy4fAzU5Ki8RX/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQMEAgUG/8QAMhEAAgECAwUHAwMFAAAAAAAAAAECAxEEITESQVFh8AUTInGBkaGxwdEyQuEGFCNScv/aAAwDAQACEQMRAD8AuFEaogoI1BMpQJRGqJhRGqIxBKIxRBURqiByGohqJ5RDURgEojFEwohgRiMgQgJ4CZgBm0zBvPEx3AK89mii0W1SK4EnNNT574+cNR8DENfoQpvlJH4gfP2l5iqwyG7ZfPa04bzlxBqmIcCp8Rc/htt7D3/OGuRSnHeys4txNq9Qu5N7nv8ArIBq6ae3rF1GmL6SqSR05DQ1x6GYqNt+8AGEffpGc3CVyJe8u8S+DWVzfQjUG2nkekoL2v7R9CpbYn17GJo7iz6K4LzMlVUDlELABV1BbpoPX85sa6i8+d+VatqqlmCrmAJ0NgewPU20t1tPoDhdTPRVspTTY26adNPlOCc4WzRItBIhkTxECYoiYIhkTBEYCyIJEYRBIgAsiLIjiIJEQEdhFsI9hFsICEMIphHsIthACOwi7RzCBaAFSojkEBRGqJIqGojlEBRGqIxBKI5RAURyiMQSiGogqIxRGASiMAgqIYEBGRMWhTxgAJi2MNop4mMXUeRalaHWaVuIeTk7HcY3I3MeNZMM5X7J76C04biKl2J03J951zmjEBcK5Y9Mo0zXJ0AAnIK25ndF3uyjVkLIvptLDC8OUgHWRcFQLtrsNTL3C1aa2FTOgv8AWKMRO6smtCuHhF5z05k3B8GpMtsgPS+xEZxjlAJTDUr5tyGOh8gZtPA8EjgNTdagzWuNdeolpxhMiEHtpPPVead7v1PVlRpSysvQ4jVpFSVOhGhB6QaJt10l/wAxYcf8g3uB6yhp7z0ac9uNzx61Lu5uJ0P6M69FK/ip5nt4SbEDvvt7azuFB8yBu4v7GcT+jDhQrVQxa1rnIwOUgW633/3ynbqFLIgW97AC/eBGpqjNpgiFMGBMEiDaERPGAhZEEiGZgxgKImCIZEAwAWwimEeYphEAlhFMI9hFMICEMIu0cwi7QAqkEaogKI1RJFRiiOURaiNURiYaiOUQFENRGINRGKIKiMEYBAQwIIhiAj0wYU9aAC2iqgjmEW4iYyDXlTipcVxKrFrIyLQ1K+oobRgCOx1nLeZeGrQxLr0azUx66/4nUm3mvc18JNcJUQAlPrDQHLcG4/G47GcQnssvFJuzNT4RgSEFh4iL+/SW+Aw1aqlRHyMopZ1BDFmqgnwKBqpta1xbQ3MPhDqlRcx2sJsfFeI0NFQBnYWFrfpJVKrU7bNz0qVJOCs7eRU8rh6YYKMmW7sV0vlOXb2tBx3EsRWr5aVcG9r0auUAWUg2v76Sy4Pg2FNnykXAH9ovtJFTgPxWSqAHyqSFYm2uXNmWxDi6IbEWuok1Ujtvafxf4KVKbUVsr5saLzVRqUwBUQIc39JzK2hNwd+mx8prlGkWbQewufym+8Y5fxGKajg8OrVmUVXJb+mmuRbux82t5zcvo9+j58HVNfFCm7ZLIv1wpNtbEaEWPff5+jQlemjycVlUd2Wf0b8v/wAPhg7gXY5iCNiLWIPz1m5zKqALAAAbAaWnpQxN3dzBgwjMGAgYJhzBgABgmMMAwEAYBEYYBjAUYLCMMAiIBDRbRzRTQEJaLjWi4AVaiNURaRqyRQaojFEBY1YxMYojFgLGLGgDWMEBYxYwCEMQRDEaEemZmZjGKIi3EcRFsJwwIlZZV4pZcVRK3ErJTKQKOqNYFVLow+435GPrrrMVltRqHtSqH5KZDeaDnVJc1QDvaYNn8TFqRDsiucyWYXBGbvoYqlU1B7H8RNr5Y42aFYoWRVcksKoDIwvmF79dLX85R6m+DdshPC0xtCiUWspViCr/APL/AOWusu8LxYpdNCpW97WA3vp0k/iWNpurJ/DYIFg961JFDAMSbjKxytrvc94vlDgoq1xcE06VnYuSxax8AYnck669jISp7Uklr7FHV2INyWS536+vE27ljhPwVas4tUqhbg7pTFyq+upJ9u0vJiZnoRiopJHgzm5ycnqzE9MzE6OT0EwpiAAmDDMEwAEzBhGAYAAYJhmAYxAGAYZgmIBbCIaSGiGgAlouNaLgIq1jViljVkig5Y1YtY1YwDWNWLWMWMQxYawFjBGAYjBFiMEaAzM2nhM2gABEBhHERTxNAR6gkDEiTqzyuqkubKLn/d5KR3Eq8SNYrGVkp0KhZgL06iqCQMzFSAB3Ool1R4WMwLnNqNOn+ZqP0i8MqJiExFiaZpLRuNqVQMxsewYMLeYPlOHSlFbTL05RnJROdklH8uv6GbDw7EYWoB8ZdLWNrnWVdTD3O0k4DhniudOhnM5RazPShGSbtvNlvQpralc7WA1vLPlvjeIw7hUVGNevRRlcMbDMBZbEW0Zu/fykHA4dVFkGYnQbkk9gJu3KfLBpOMTXFmF/g0za6EixdvvWuAOlzfXadC852j6s5xThGm9v0XXybOTYm/fQjtMg32nnW++v5CA5Cz1XBHhXGT0Qtc9oxXubThwY7oOIw2Lp1c3w3D5WKNlvYMCQRfrqDt2j1M57yrxP+BvSrXyq9SjXOrNTqK7ZXtuV1a/qDIznsNX0NFKj3kZtaq1lx49czoBmDMqwIBBBBAII1BB2IPaeMoQFmCYZgmACzBMMwDGIAwDDMAxAA0S0c0U0AENFxjxcBFWkcsSkcskVHLGrErHLGA1YawFjFgINYwRaxizoQYjBFrGCABiZvAJi6lS0LgE9SRnq3NhqZDxeMtJnDV77kG/robfnFHxOw3krsFcIX+sbeQ/eSkw6qLAWkgCeM0Rgo6EnJsism3qIyrRV1KuoZT4SCAwZT0IOhHkYWSME6QjX8TyLgKuqh6Jvf+U1h8nDAegsI2lyPg1+s9Zh2ugv7hby+RYYXvJvD0nrFdfBoWJrJW237i+HcNw2HFqNJU0tm1ZiPNjcn5yU9TtABmZRRSVkRlJyd2zBY9B7mLNMnUmMJgM0ZyeygQ6ZGp9okmRcbxnDUB/OrU6Zv9Um7H0QeI/KDaWo0m3ZIs5qXNnChTc41ALMuTFLoLlR/Lq+otlPcZexiOJc+ogvQos/36vgU+i/WPvllVX41Wx1O1WqMhsWo01VUNjcXv4m1G1yNJgxFalKNtfI9LCYavCSm1Zc968vzYmctcyfDAVtaRN8u7Ugeq9x5e4895purKGUhgQCrDUEHYgzmC2AsR+FrfhJfBeYKuDbKR8SkSSUvsepQ9D5bHy3kKNZx8MtPoWxOF2/FDX6/wA9efRDAMRw/iVDErmo1FfS5XZk/uXcSQ03J3PLaadmLMAxhizGcgGAYRgmIAGiXjmimgAh4uG8XARWJGrEpHLJFRyxyxCxyxgNWNWKWMUwAYIawFhiNCYxYd4AmSYxGGaQcXWsJKqNKfiNTQycnY6irkJanxKyr0vc+g1/SbBRWwVgbbNfsCSL/nNX4O16zH7jfms2KjWBphSbH4dan7g5l/BlneG0bHWWdkW1GtfwsMrDcd/MeUYwkOhVDqL/AFl6ySpvNRnCUQ8syonqj2sqi7HRR+p8oxnrMfChAa18xGYIO5Fxf0/zDpq2UZjmawzNsCepAnqaZRlBvrd2+237eUNhPCq9swhXaUbwWTae/W6WjS0vv3ZWvdUvDzMTBM8DeYM9ijXp14KdOV09/wBuT5PMi007MFmkXG4oU1zWLEmyqLAs1ibXOg0BPtHvI2JpK65WFxv1Fj3BGoMpK9nbUUbXW1oc54nzTjsTWOHph6dmdHo4W9SoMpIJaqutrjcZREYLljEgNVqNSwyLmd2qH4rKLXJyLpsOrTeXo06CZKVNaS3JIQBbsdybbnzOsp69dmvSYZleyEHZkbQg/j85ndBPObb+htWKa8NKKivd9e9jmHGcaHq5aVWq1MAXLhULt1KqPqLtYEk+fQbTy6cO1K9NjmGjKd795rnNXB1oVyUSoKFlNNmJKkbN4uviBGvYd5L5dxnhKKlrah0uDbztMteFloehQnt773N2oqDpofUbzFTCK19FEo6XELbsza7ZR+clHiTdAfcgWkG0W2ZXHVMMaZzqSjLqrqStj5EbTaeVuaUxRGGqkLXFPPbQCsgNiy/eGlx53HYadh8etQ5CVUnbUbzUOKceqUm+JRIATFIad9Sa2HL+K42Tx20+te3Q27w+05tR9euva5DGRg4ePXd1172PoJosyPwfHfxOFo4nLk+Nh6NfLvl+Ige3teSDPQPFAMAw2izEADRTRjRTGACniY14mAFYscsQpjlMkio5Y1YlTGqYCHrGLFLGLGA1YYi1jBGhDAZgmYvMExiF1TKXiR0MuqkpeJDQyM9CsNSo4PUIrgDc5lF++4/ES34kcqF02uNDulRTfI3btfrcH013A64lFH/YPkNT+F5tmNp50Ib6xXKT/wBq9L/e/UXHUSmGu4tHVfKSD4Xiw6hxswBF9Nx2l3Rac84NjzSrfAc30Pw2PYXYg/j8puWGxoy3vNFOV1mQqU9llrWrhBczUuaOcf8A8+qlFFSrXaz4hWJAoUCPDTuNnbQ31t2OkuK+OWlTGJqW+tlw1Nv6qmvjPkLE+3pOVcycFqmq+KplqhqEvUB1Yt1IPUeXTpLUZYeVXu6zya8lnlm1pyfEp/ZYmdF1aUb298tbLfbpZO3XuXeP4bHU81JvEAPiUmsHpnzHUeY0luZ8ycL4xWw1X4lN2psCcrLuD+vodDOvcpc/0sRloYsrSqkALVHhp1j0B+w3lsem9p4fa39O1cLFzw6cocP3RX3SW9Zpa8SFHFxllLJ/DN6tMzN54T5rCVp0JbdKVvo/Nb10rGyUU8mLZIl0kq8GotxPrcD2lTxPheUuHHy/Gq8szLOm457ilx6aTWeJU3Iy0lZnIJGUZsuhAa3qQPcTbMaNLSoonJUJ8gvtv+s3VXaNwp6lFVwgrUv4dy2WxXQ/Vta1vQiavxng9LAi4xjfEI8FJUGZlJ3Yh/CvmRrY2Bm0c81cRQpjE4bKFLZa91zNTZtFddbAE6G4OpHecyrlnJdmLsxuzMSST5mZ5yi1obsPGX6k7LkSkxbE61WHsP3kjE4lyllqncZrgfV6+8oajESK+NI0ke6TNrrWTuXOtVRSWrlLMBd7WF+txYr8jKilgXZsjAjKSlTpkIY3X1vJaLci43APvLekLjXSdRlKk3Z3RN0lWs3u+TsPJHFUxOCRQQGpItF0FhYIAFNuxAH4iXrTj3JvEjhcbT1stQilUHQqxsCfRrH5952BpWnK6PPxNLu6jS0ef8egDRbQ2i2M7M4DGKaGximMQC3MXCcxd4AVSGOUyOhjVMkVJKmMUxCmNUxgPUxqmIVoYaMCQrQ1aIDQw0BD7zBaJzTN4wPOZTcTbQyfj8ZTopnqutNdrt1PYDcnyE0vifNVJ2y0lJG2d7Lf0Xf52kpstShKTyRXY7iL0Ki1EIzK+YX1BA3B8je3oZsuA52wNZMtUth2I1WqGdL/AHaijQf3ZZqhw6VTmqai3S+kivwinvla3Wxb9TOKdbY0N0sGqi8RO5l4hhs3xKWJpE7gpURjf21m1cpcRp4yj/EFr0ksKxF1JrWH8pR3J+Q17TUuGcEwGtSrSetb+lnIA9ltf3lxmFNUwuHpihhVQvhQTd6zhrV6lXrnzFR1GXLY7ysa0W295Gth5Rilu48DYeMUWrH4pAOhyAbIugyr2FgPlKwDMpXt0PSXnAFvQKtqQSdfOefha1lLJZWtuPyMdXD94tqOpowXaPc/456L4Oa8e4GrsXHha+h3BP3v3mskPSazi3ke06fxTCMn/IpHS42lDjcHSrLlex7W3B8jNWB7TqYe0Kibj8ry/Hsehj+x6PaEO+pNKb3/ALZefB89eKeqlck/SE9C1DE5qlHZX3ekPL7S+W46dBOu4HGU69NatJ1qIwurKbgj/ek+beIcOegbjxL0Ze/mOktOUuasRgHvTbMpIL0muUqD9G+8NfUaQ7U/p6jjo/3OCaUuGkZPf/zL0s3nLVyPknKthKjo4iLTXuufNc/a59DExZbr/t5R8vczYfiFPNRazgD4lFrZ6Z7+a9mGnvpL4LpPjMB2fVq4x06sXFU34r5O+5eut/8AXNPNGudRKF1vIFcAzX8e1qtuwH7zZaqzWeIr/Mb+63y0n12Jfh9SVH9QxclVGpVAGV1KOp6qRYics5j4BVwNSxu9NifhVejjs1tnA3HuNJ0qg1pPalTrUzSqotRGFmRtQf2PnuJmizTGbg8tDhGI2lT8O9QDznRec+SnwqnEUL1KA1cHV6A+99pPvdOvc6KiWqD3H4GWiWk1NJol329paYZha8rHj8PUttJ1FdGik7FnQb+ag++lj53E7w0+flq/1dmUzvzNfWOjvMmPd3H1+wLRbGGximMsYAGMUxhMYpjEAtzF3hOYq8AKxDGqZGVo5Wkiw9TGKYlWjA0BD1aGGiA09mhcCSHmfiSNmmDUiudWJRqyPjscKVJ6p2RGc+dhe0S1aQeJAVaL0ibZ0ZL9rjSc7R0oXObcR4rVrualRi7G+97KPsoP6R5CQw999ImspRirAggkEHcEdIsOBO9k2xktDdeF52ogfEVRa217yJiKGIc5aVWn1Bzhl+VryvwD1Cg/mhANrDUSXhqRYkrilW2viU/vMmzZvT2f4PQvdb/gkLw+oKORqwFTMWaoPGuW2i5CLDuSbk+UpuU+IVquIU1ahcKlSnTGgVASGbKB3IGvXSL5odqQWkK/xCwY1MgCgrpl8/tfKZ5Zo5HT0Yn3BmiC8Lb38jFXknLZV8ub/J1zB1fh0+oNjf3lrwxciZvtf/ZR4bECrTAOhsATLvCVLoB1E3xd1kePO6ZYjCJVQq6hgRY385o/MPKFWleph7uu5TqB5ftN8wx0j2MU6cZ6mvBdo18JK9N5b09H5r7o4hcElWFuhUjfy1/KVXFeBlLvR8XUp1v5ftOx8d5Wo4rxpalU7gWV/wC4D85qOD5YxBxYw9RWXXMaliy/CX6zq3bUD1te15KlVr4Se1T9tz5M+mniOz+1aDVbwuKbzttRtq4veumrgfQ/y4STxGqCAM1PDjUXY6M3mBt6k/ZnVQZ7D0kpItNAFVVCqOwEySOk3VqzrT237cOvrmfERioqy6/HSFMJruNp+Nv7m/ObGTKTGJ429ZjrrJFqTsyuFOSaAhCnGIkypFnIlUj036EHW4nOucvo6a5xGAUEXzNhhoUO96XdfubjpfYdEpySplkjlTcXkfOjU2uVKlWGjowIZD2KnWYpgifQXEuFYbFC2Io06tvqsw8S/wBrjxL7Ga1j/o4wNQeB8RR7ZXVx/wC6kn5xONzRHEpanNuD4B8XWTDU93axboijVmPkACZ3cAKABsAAPQaTXuVuUaPDizq7VqjLkzsFTKlwSqgXtchbm/8ASNpfsYRViNerttW0MMYpjCYxLGdEAWMU5hMYl2gADmKvPO0XeAH/2Q=="
+                                alt="perfil">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <h5>Genrardo_Caceres</h5>
+                            <p>Cafe colombiano presente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container m-2 p-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                            <img class="img_perfil rounded-circle"
+                                src="https://elcomercio.pe/resizer/Blkq0MqeldjQYMP-5zcKChxIrgw=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7HNFT4JYO5BUHHS4I7KLY4QIKI.jpeg"
+                                alt="perfil">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <h5>Ignacio.Heredia</h5>
+                            <p>Interesante lo que se plantea en el articulo, lo voy a intentar con algunas
+                                modificaciones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 aside-rigth">
+
+            </div>
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+            <p class="col-md-4 mb-0 text-muted">© 2022 Todos los derechos reservados | Cafe Global
+            </p>
+
+            <a href="../index.html"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="../assets/coffee.png" alt="" id="navLogo">
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        class="nav-link px-2 text-muted">Facebook</a></li>
+                <li class="nav-item"><a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"
+                        class="nav-link px-2 text-muted">Twitter</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="nav-link px-2 text-muted">Instagram</a></li>
+                <li class="nav-item"><a href="./contactUs.html" class="nav-link px-2 text-muted">Contacto</a></li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

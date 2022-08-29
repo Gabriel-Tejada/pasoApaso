@@ -1,0 +1,39 @@
+*{   
+   margin:0;
+   font-family: Helvetica;
+}
+
+.imagen_central {
+    width: 70%;
+}
+
+.img_perfil_ing {
+    width: 100%;
+    
+}
+
+.img_perfil {
+    width: 5rem;
+    height: 5rem;
+ }
+
+ .text_area {
+    width: 95%;
+    min-height: fit-content;
+ }
+
+ .text_area_com {
+    width: 95%;
+    height: fit-content;
+ }
+
+ .titleComentarios {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-bottom: 24px;
+ }
+
+ p {
+    font-size: x-large;
+ }
+

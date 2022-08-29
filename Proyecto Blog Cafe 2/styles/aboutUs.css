@@ -1,0 +1,40 @@
+
+.carousel-item img {
+  width: 427px;
+  height: 640px;
+  opacity: 75%
+  
+}
+.p {
+  color: black;
+  background-color: dimgray;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+}
+.card-group img {
+  width: 150px;
+  height: 100px;
+  position: relative;
+}
+.conteiner2 {
+  font-size: 50px;
+}
+
+.profileIcon {
+  max-width: 100px;
+  max-height: auto;
+  border: 3px solid rgba(0, 0, 0, 0.192);   
+}
+body{
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(241, 241, 183, 0.39);
+}
+.footer{
+  background-color: white;
+}
+
+.space{
+  height: 7rem;
+}

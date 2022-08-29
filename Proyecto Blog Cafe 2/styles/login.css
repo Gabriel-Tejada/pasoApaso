@@ -1,0 +1,19 @@
+form{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cafe{
+    background: url(../assets/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+   }
+   
+   .loginBox{
+     padding: 0;
+   }
+   
+   .loginIcon{
+     align-self: center;
+   }
+   

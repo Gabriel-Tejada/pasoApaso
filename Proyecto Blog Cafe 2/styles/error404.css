@@ -1,0 +1,15 @@
+.img-fluid {
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.14); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.14);
+}
+
+.btn {
+        background: linear-gradient(270deg, #5c3c1d, #f7c080, #b67933, #df614c);
+        background-size: 800% 800%;
+      
+        -webkit-animation: AnimationName 0s ease infinite;
+        -moz-animation: AnimationName 0s ease infinite;
+        -o-animation: AnimationName 0s ease infinite;
+        animation: AnimationName 0s ease infinite;
+}
